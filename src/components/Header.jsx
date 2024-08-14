@@ -17,7 +17,7 @@ export const Header = () => {
                     <img src={logo} alt="Logo" />
                 </Link>
             </div>
-            <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu} aria-expanded={isOpen}>
                 <div className="hamburger">
                     <span></span>
                     <span></span>

@@ -16,7 +16,7 @@ header {
 
 nav {
     display: flex;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
     z-index: 999;
 }
 
@@ -41,7 +41,10 @@ nav {
 
 .nav-links li a:hover {
     color: #f4b400;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.75);
+    transition: text-shadow 0.3s ease;
 }
+
 
 .nav-links a {
     position: relative;
@@ -138,6 +141,45 @@ nav {
 @media (min-width: 481px) and (max-width: 767px) {
     .logo img {
         height: 50px;
+    }
+
+    nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #2e2e2e;
+        overflow: hidden;
+        max-height: 0;
+        display: block;
+    }
+
+    nav.open {
+        max-height: 100vh;
+        position: absolute;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        font-size: 20px; 
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 40px;
     }
 
     nav {
