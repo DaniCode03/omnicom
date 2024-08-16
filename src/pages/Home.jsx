@@ -32,7 +32,7 @@ export const Home = () => {
         <span id="typed"></span>
       </div>
       <Description text="OCRE is a micro-enterprise dedicated to offering integrated solutions in electricity, air conditioning (HVAC), renewable energy, and energy efficiency. With successful projects in Colombia and Virginia, we are looking to expand our operations and secure financing for new projects." />
-      <div className='animate__animated animate__fadeInUp'>
+      <div className='animated fadeInUp'>
         <Button text="Get to Know Us More" />
       </div>
     </section>

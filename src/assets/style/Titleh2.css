@@ -1,0 +1,10 @@
+.secondary-title {
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 50px; 
+    text-align: center;
+    width: 100%; 
+
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.7)
+}

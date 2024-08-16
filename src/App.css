@@ -44,6 +44,15 @@ main {
     flex: 1;
 }
 
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    overflow-x: hidden;
+}
+
 .animate-container {
     overflow: hidden;
     position: relative;

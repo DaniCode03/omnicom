@@ -1,15 +1,9 @@
-section {
+.animate-container {
     padding-top: 100px;
     text-align: center;
 }
 
-h1.animate__pulse {
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-h1 {
+.animate-container h1 {
     font-size: 8rem;
     font-weight: 900;
     text-shadow:
@@ -21,30 +15,27 @@ h1 {
         0 0 90px rgba(255, 217, 0, 1),
         0 0 100px rgba(255, 217, 0, 1),
         0 0 140px rgba(255, 217, 0, 1);
-}
-
-
-section h1 {
     color: #000;
     margin-bottom: 55px;
     font-family: sans-serif;
 }
 
-section p {
+.animate-container p {
     margin: 10px auto;
     color: #000;
     font-size: 30px;
 }
 
-section p.descripcion {
+.animate-container p.descripcion {
     font-size: 20px;
     max-width: 800px;
+    width: 80%; 
     margin: 30px auto;
-    color: #000;
+    text-align: center; 
     font-family: sans-serif;
 }
 
-section a {
+.animate-container .button {
     text-decoration: none;
     border: 3px solid #ffffff;
     padding: 10px 15px;
@@ -54,11 +45,6 @@ section a {
     text-align: center;
     box-shadow: -1px -2px 30px 5px rgba(255, 255, 255, 1);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-section a:hover {
-    box-shadow: -1px -2px 30px 5px #ffff00;
-    transform: rotate(5deg) scale(1.1);
 }
 
 .typewriter {
@@ -72,32 +58,32 @@ section a:hover {
 }
 
 @media (max-width: 1024px) {
-    h1 {
+    .animate-container h1 {
         font-size: 6rem;
     }
 
-    section p,
-    section p.descripcion {
+    .animate-container p,
+    .animate-container p.descripcion {
         font-size: 24px;
     }
 
-    section {
+    .animate-container {
         padding-top: 75px;
     }
 }
 
 @media (max-width: 768px) {
-    h1 {
+    .animate-container h1 {
         font-size: 5rem;
     }
 
-    section p,
-    section p.descripcion {
+    .animate-container p,
+    .animate-container p.descripcion {
         font-size: 18px;
-       
+        width: 90%; 
     }
 
-    section {
+    .animate-container {
         padding-top: 50px;
     }
 
@@ -109,53 +95,53 @@ section a:hover {
 }
 
 @media (max-width: 480px) {
-
-    h1 {
+    .animate-container h1 {
         font-size: 4rem;
     }
 
-    section p,
-    section p.descripcion {
+    .animate-container p,
+    .animate-container p.descripcion {
         font-size: 1.1rem;
         padding-top: 50px;
+        width: 95%; 
     }
 
-    section {
+    .animate-container {
         padding-top: 50px;
     }
 
-    section a {
+    .animate-container .button {
         padding: 8px 12px;
     }
 
     .typewriter {
         font-size: 1.5rem;
-        min-height: 70px; 
+        min-height: 70px;
         line-height: 1.4;
     }
 }
 
 @media (max-width: 380px) {
-    h1 {
+    .animate-container h1 {
         font-size: 3rem;
     }
 
-    section p,
-    section p.descripcion {
+    .animate-container p,
+    .animate-container p.descripcion {
         font-size: 1rem;
     }
 
-    section {
+    .animate-container {
         padding-top: 20px;
     }
 
-    section a {
+    .animate-container .button {
         padding: 6px 10px;
     }
     
     .typewriter {
         font-size: 1.2rem;
-        min-height: 60px; 
+        min-height: 60px;
         line-height: 1.5;
     }
 }

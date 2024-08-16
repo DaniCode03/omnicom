@@ -3,6 +3,7 @@ import './App.css';
 import { Layout } from './pages/Layout';
 import { Home } from './pages/Home';
 import 'animate.css';
+import About_us from './pages/About_us';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="About_us" element= {<About_us/>} />
         </Route>
       </Routes>
     </div>
