@@ -36,13 +36,6 @@ section p {
     font-size: 30px;
 }
 
-.typewriter {
-    font-size: 2.0rem;
-    color: #000000;
-    font-family: sans-serif;
-}
-
-
 section p.descripcion {
     font-size: 20px;
     max-width: 800px;
@@ -66,4 +59,103 @@ section a {
 section a:hover {
     box-shadow: -1px -2px 30px 5px #ffff00;
     transform: rotate(5deg) scale(1.1);
+}
+
+.typewriter {
+    font-size: 2rem;
+    color: #000000;
+    font-family: sans-serif;
+    max-width: 100%;
+    min-height: 60px; 
+    line-height: 1.2; 
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    section p,
+    section p.descripcion {
+        font-size: 24px;
+    }
+
+    section {
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    section p,
+    section p.descripcion {
+        font-size: 18px;
+       
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    .typewriter {
+        font-size: 1.5rem;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    section p,
+    section p.descripcion {
+        font-size: 1.1rem;
+        padding-top: 50px;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    section a {
+        padding: 8px 12px;
+    }
+
+    .typewriter {
+        font-size: 1.5rem;
+        min-height: 70px; 
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    section p,
+    section p.descripcion {
+        font-size: 1rem;
+    }
+
+    section {
+        padding-top: 20px;
+    }
+
+    section a {
+        padding: 6px 10px;
+    }
+    
+    .typewriter {
+        font-size: 1.2rem;
+        min-height: 60px; 
+        line-height: 1.5;
+    }
 }

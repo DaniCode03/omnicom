@@ -24,9 +24,9 @@ footer {
 }
 
 .social-media {
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .social-icon {
@@ -49,42 +49,44 @@ footer {
 
 .contact-info {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: 18px;
+    padding-right: 70px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.contact-link {
-    color: #fff;
-    text-decoration: none;
+.email {
     margin-right: 5px;
 }
 
-.contact-item i {
+.phone {
     margin-left: 5px;
-    font-size: 20px;
-    transition: transform 0.3s ease;
 }
 
-.contact-item i:hover {
-    transform: scale(1.1);
+.separator {
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 .footer-content p {
     margin-top: 10px;
 }
 
+.email i {
+    margin-left: 10px;
+}
+
+.phone i {
+    margin-right: 10px;
+}
+
 @media (max-width: 768px) {
     .footer-content {
         max-width: 90%;
         padding: 0 10px;
+    }
+    .footer-content p {
+        font-size: 0.8rem;
     }
 
     .social-contact {
@@ -95,14 +97,21 @@ footer {
     .contact-info {
         flex-direction: column;
         font-size: 16px;
+        align-items: center; 
+        padding-left: 70px;
     }
 
-    .contact-item {
+    .contact-info i {   
+        display: none; 
+    }
+
+    .separator {
+        display: none; 
+    }
+
+    .email,
+    .phone {
         margin: 5px 0;
-    }
-
-    .contact-item i {
-        display: none;
     }
 }
 
@@ -111,6 +120,14 @@ footer {
         font-size: 14px;
     }
 
+    .contact-info i { 
+        display: none;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+    
     .social-icon img {
         width: 20px;
         height: 20px;

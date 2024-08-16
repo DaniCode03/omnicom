@@ -11,29 +11,31 @@ export const Footer = () => {
       <div className="footer-content">
         <div className="social-contact">
           <div className="social-media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
+            <a href="https://facebook.com" target="_blank" className="social-icon" aria-label="Facebook">
               <img src={facebookLogo} alt="Facebook" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Twitter">
+            <a href="https://twitter.com" target="_blank" className="social-icon" aria-label="Twitter">
               <img src={twitterLogo} alt="Twitter" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+            <a href="https://instagram.com" target="_blank" className="social-icon" aria-label="Instagram">
               <img src={instagramLogo} alt="Instagram" />
             </a>
           </div>
           <div className="contact-info">
-            <div className="contact-item">
-              <a href="mailto:info@omnicomcr.com" className="contact-link">info@omnicomcr.com</a>
-              <i className="fas fa-envelope" aria-hidden="true"></i>
-            </div>
-            <div className="contact-item">
-              <i className="fas fa-phone-alt" aria-hidden="true"></i>
-              <a href="tel:3016758465" className="contact-link">3016758465</a>
-            </div>
+            <span className="email">
+              <a href="mailto:info@omnicomcr.com">info@omnicomcr.com</a>
+              <i className="fas fa-envelope"></i>
+            </span>
+            <span className="separator">|</span>
+            <span className="phone">
+              <i className="fas fa-phone-alt"></i>
+              <a href="tel:3016758465">3016758465</a>
+            </span>
           </div>
         </div>
         <p>&copy; OMNICOM CR ENTERPRISES, LLC. All rights reserved.</p>
       </div>
     </footer>
+
   );
 };
