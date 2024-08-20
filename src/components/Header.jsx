@@ -1,14 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../assets/style/Header.css';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    // Close menu when clicking outside of it
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                closeMenu();
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
 
     return (
         <header>
@@ -24,14 +41,14 @@ export const Header = () => {
                     <span></span>
                 </div>
             </div>
-            <nav className={isOpen ? 'open' : ''}>
+            <nav className={`nav ${isOpen ? 'open' : ''}`} ref={menuRef}>
                 <ul className="nav-links">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about_us">About Us</Link></li>
-                    <li><Link to="/services">Services</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/market-analysis">Market Analysis</Link></li>
-                    <li><Link to="/contact_us">Contact Us</Link></li>
+                    <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+                    <li><Link to="/about_us" onClick={closeMenu}>About Us</Link></li>
+                    <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+                    <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
+                    <li><Link to="/market-analysis" onClick={closeMenu}>Market Analysis</Link></li>
+                    <li><Link to="/contact_us" onClick={closeMenu}>Contact Us</Link></li>
                 </ul>
             </nav>
         </header>

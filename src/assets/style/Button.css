@@ -1,4 +1,5 @@
 .btn {
+    border: none;
     cursor: pointer;
     position: relative;
     padding: 5px 10px;
@@ -15,7 +16,7 @@
     width: 10px;
     height: 10px;
     position: absolute;
-    border: 0px solid #000;
+    border: 0 solid #000;
     transition: all 1s;
 }
 
@@ -34,10 +35,8 @@
 }
 
 .btn:hover {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    background: #fff;
-    color: #000;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .btn:hover::before,

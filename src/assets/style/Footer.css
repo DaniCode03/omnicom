@@ -72,12 +72,9 @@ footer {
     margin-top: 10px;
 }
 
-.email i {
-    margin-left: 10px;
-}
-
+.email i,
 .phone i {
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 @media (max-width: 768px) {
@@ -85,6 +82,7 @@ footer {
         max-width: 90%;
         padding: 0 10px;
     }
+
     .footer-content p {
         font-size: 0.8rem;
     }
@@ -101,10 +99,7 @@ footer {
         padding-left: 70px;
     }
 
-    .contact-info i {   
-        display: none; 
-    }
-
+    .contact-info i, 
     .separator {
         display: none; 
     }
@@ -118,10 +113,6 @@ footer {
 @media (max-width: 480px) {
     .contact-info {
         font-size: 14px;
-    }
-
-    .contact-info i { 
-        display: none;
     }
 
     .footer-content p {

@@ -100,8 +100,26 @@
     color: #0077b5; 
 }
 
-.social-icons a.youtube:hover {
-    color: #ff0000; 
+@media (max-width: 768px) {
+    .card-container {
+        padding: 10px; 
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .card-image img {
+        width: 60%;
+    }
 }
 
+@media (max-width: 480px) {
+    .card {
+        margin: 5px; 
+    }
 
+    .card-image img {
+        width: 70%; 
+    }
+}
