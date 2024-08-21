@@ -1,0 +1,57 @@
+.no-internet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 150px;
+    box-sizing: border-box;
+}
+
+.no-internet-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5px;
+    flex: 1;
+}
+
+.no-internet-content h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: #ff4757;
+    text-shadow:
+        0 0 5px rgba(255, 255, 0, 1),
+        0 0 10px rgba(255, 255, 0, 1),
+        0 0 20px rgba(255, 255, 0, 1),
+        0 0 40px rgba(255, 217, 0, 1),
+        0 0 80px rgba(255, 217, 0, 1),
+        0 0 90px rgba(255, 217, 0, 1),
+        0 0 100px rgba(255, 217, 0, 1),
+        0 0 140px rgba(255, 217, 0, 1);
+    animation: float 4s ease-in-out infinite;
+}
+
+.no-internet-content h1 {
+    font-size: 4rem;
+    margin: 0 0 20px;
+    color: #000;
+    text-align: left;
+}
+
+.no-internet-content .error-code {
+    font-size: 3rem;
+    margin: 0 0 20px;
+    color: #343a40;
+}
+
+.no-internet-gif {
+    display: flex;
+    align-items: center;
+}
+
+.no-internet-gif img {
+    width: 800px;
+    height: auto;
+}

@@ -1,0 +1,96 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #f8f9fa;
+    padding: 80px 250px;
+    box-sizing: border-box;
+}
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 5px;
+    flex: 1;
+}
+
+.errorimg img{
+    width: 600px;
+    height: auto;
+}
+
+.error-content h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: #ff4757;
+    text-shadow:
+        0 0 5px rgba(255, 255, 0, 1),
+        0 0 10px rgba(255, 255, 0, 1),
+        0 0 20px rgba(255, 255, 0, 1),
+        0 0 40px rgba(255, 217, 0, 1),
+        0 0 80px rgba(255, 217, 0, 1),
+        0 0 90px rgba(255, 217, 0, 1),
+        0 0 100px rgba(255, 217, 0, 1),
+        0 0 140px rgba(255, 217, 0, 1);
+    animation: float 4s ease-in-out infinite;
+}
+
+.error-content h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.error-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .error-content h1 {
+        font-size: 6rem;
+    }
+
+    .error-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .error-content p {
+        font-size: 1rem;
+    }
+
+    .error-link {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-content h1 {
+        font-size: 4rem;
+    }
+
+    .error-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .error-content p {
+        font-size: 0.9rem;
+    }
+
+    .error-link {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}

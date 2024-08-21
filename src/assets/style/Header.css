@@ -11,11 +11,20 @@ header {
 }
 
 .logo {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo a {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
 }
 
 .logo img {
     height: 70px;
+    pointer-events: none;
 }
 
 nav {

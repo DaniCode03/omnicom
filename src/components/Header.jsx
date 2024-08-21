@@ -8,23 +8,25 @@ export const Header = () => {
     const menuRef = useRef(null);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(prevState => !prevState);
     };
 
     const closeMenu = () => {
         setIsOpen(false);
     };
 
-    // Close menu when clicking outside of it
+    // Cerrar el menú al hacer clic fuera del menú o en una opción
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
+            if (menuRef.current && !menuRef.current.contains(event.target) && !event.target.closest('.menu-toggle')) {
                 closeMenu();
             }
         };
 
         document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
     }, []);
 
     return (
@@ -34,7 +36,11 @@ export const Header = () => {
                     <img src={logo} alt="Logo" />
                 </Link>
             </div>
-            <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu} aria-expanded={isOpen}>
+            <div
+                className={`menu-toggle ${isOpen ? 'open' : ''}`}
+                onClick={toggleMenu}
+                aria-expanded={isOpen}
+            >
                 <div className="hamburger">
                     <span></span>
                     <span></span>
