@@ -17,7 +17,7 @@ export const About_us = () => {
     return (
         <div>
             <section className="animate-container">
-                <Title text="About Us" />
+                <Title text="ABOUT US" />
                 <Description text="Omnicom CR Enterprises (OCRE) is an innovative company specializing in providing comprehensive solutions in construction, energy efficiency, renewable energy, general electricity, air conditioning, plumbing and sanitation, cleaning, maintenance and gardening, and specialized personnel supply. Founded by experts with over 15 years of experience in both Colombia and the United States, Omnicom combines local and international knowledge to deliver high-quality services and customized solutions to its clients." />
             </section>
             <section className="objetivos">

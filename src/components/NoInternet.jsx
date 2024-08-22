@@ -3,7 +3,7 @@ import '../assets/style/NoInternet.css';
 import errorGif from '../assets/img/no-internet-gif.gif'
 import Button from './Button';
 
-const NoInternet = () => {
+export const NoInternet = () => {
     const handleRetry = () => {
         window.location.reload();
     };

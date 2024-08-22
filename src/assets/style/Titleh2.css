@@ -19,3 +19,9 @@
         font-size: 28px;
     }
 }
+
+@media (max-width: 300px) {
+    .secondary-title {
+        font-size: 24px;
+    }
+}

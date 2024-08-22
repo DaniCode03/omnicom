@@ -15,7 +15,6 @@ export const Header = () => {
         setIsOpen(false);
     };
 
-    // Cerrar el menú al hacer clic fuera del menú o en una opción
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target) && !event.target.closest('.menu-toggle')) {
@@ -60,3 +59,5 @@ export const Header = () => {
         </header>
     );
 };
+
+export default Header;
