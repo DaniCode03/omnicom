@@ -61,6 +61,19 @@
     margin-right: 15px;
 }
 
+
+.product-section {
+    padding: 20px;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
 @media (max-width: 768px) {
     .service-card {
         width: 100%; 

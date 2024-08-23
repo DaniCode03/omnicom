@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/style/ServiceCard.css'
+import Button from '../components/Button';
 
 export const ServiceCard = ({ title, description, image }) => {
   return (
@@ -8,7 +9,7 @@ export const ServiceCard = ({ title, description, image }) => {
         <p>{description}</p>
         <div className="service-footer">
             <img src={image} alt={title} />
-            <span className='btn'>ORDER</span>
+            <Button text="Order" />
         </div>
     </div>
   )

@@ -6,6 +6,9 @@ import GeneralElectricity from '../assets/img/General-Electricity.png';
 import HVAC from '../assets/img/HVAC.png';
 import RenewableEnergy from '../assets/img/Renewable-Energy.png';
 import EnergyEfficiency from '../assets/img/Energy-Efficiency.png';
+import SmartEcoControl from '../components/SmartEcoControl';
+import SmartEcoImage from '../assets/img/smart-ecocontrol.jpeg';
+import Titleh2 from '../components/Titleh2';
 
 export const Service = () => {
   return (
@@ -39,6 +42,18 @@ export const Service = () => {
           />
         </div>
       </section>
+      <section className="product-section">
+        <Titleh2 text="Product" />
+        <div className="product-container">
+          <SmartEcoControl
+            Image={SmartEcoImage} 
+            Price="$9.99"         
+            Name="SmartEcoControl" 
+            Description="Description of the innovative product that offers monitoring and control of electrical devices at very low cost"
+          />
+        </div>
+      </section>
+
     </div>
   );
 };
