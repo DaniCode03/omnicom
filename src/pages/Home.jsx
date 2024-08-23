@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import useTyped from '../assets/js/useTyped';
 import Title from '../components/Title';
 import Description from '../components/Description';
+import { Link } from 'react-router-dom';
 
 export const Home = () => {
   useTyped('#typed', {
@@ -33,7 +34,9 @@ export const Home = () => {
       </div>
       <Description text="OCRE is a micro-enterprise dedicated to offering integrated solutions in electricity, air conditioning (HVAC), renewable energy, and energy efficiency. With successful projects in Colombia and Virginia, we are looking to expand our operations and secure financing for new projects." />
       <div className='animated fadeInUp'>
-        <Button text="Get to Know Us More" />
+        <Link to="/about_us">
+          <Button text="Get to Know Us More" />
+        </Link>
       </div>
     </section>
   );

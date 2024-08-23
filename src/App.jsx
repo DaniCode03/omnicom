@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'animate.css';
 import { Layout } from './pages/Layout';
 import { Home } from './pages/Home';
 import { About_us } from './pages/About_us';
 import { Service } from './pages/Service';
+import { Projects } from './pages/Projects';
 import Error from './pages/Error';
 import NoInternet from './components/NoInternet';
 
@@ -34,6 +35,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="About_us" element={<About_us />} />
             <Route path="Services" element={<Service />} />
+            <Route path="Projects" element={<Projects />} />
           </Route>
         </Routes>
       ) : (
