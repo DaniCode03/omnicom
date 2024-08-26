@@ -1,18 +1,15 @@
-.testimonials-section {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
 .testimonials-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px; /* Agrega padding para separarlo del borde en pantallas pequeñas */
 }
 
 .testimonials-row {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que las cards se ajusten en varias filas en pantallas pequeñas */
     justify-content: center;
     margin-bottom: 20px;
     width: 100%;
@@ -21,14 +18,14 @@
 .testimonial-card {
     background-color: #fff;
     border-radius: 8px;
-    border: 1px solid #999;
+    border: 1px solid #f1f1f1;
     box-shadow: 0px 0px 2px 3px #fff;
     padding: 20px;
-    margin: 0 10px;
+    margin: 10px; /* Ajusta el margen para dar espacio entre las cards en pantallas pequeñas */
     text-align: center;
     transition: transform 0.5s ease; 
-    width: 300px;
-    height: 200px;
+    width: 250px; /* Reduce el ancho en pantallas pequeñas */
+    height: auto; /* Ajusta la altura automáticamente */
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -37,7 +34,7 @@
 
 .testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 0px 5px 10px #fff;
+    box-shadow: 0px 0px 15px 8px #ece5e5;
 }
 
 .testimonial-header {
@@ -47,10 +44,10 @@
 }
 
 .testimonial-avatar {
-    width: 80px;
-    height: 80px;
+    width: 60px; /* Reduce el tamaño del avatar en pantallas pequeñas */
+    height: 60px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .testimonial-info {
@@ -58,13 +55,13 @@
 }
 
 .testimonial-name {
-    font-size: 18px;
+    font-size: 16px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
     color: #333;
     margin: 0;
 }
 
 .testimonial-content {
-    font-size: 16px;
+    font-size: 14px; /* Reduce el tamaño de fuente en pantallas pequeñas */
     color: #666;
     margin-bottom: 10px;
     text-align: left;
@@ -76,7 +73,63 @@
 }
 
 .star {
-    font-size: 20px;
+    font-size: 18px; /* Ajusta el tamaño de las estrellas en pantallas pequeñas */
     color: #FFD700;
     margin: 0 2px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .testimonials-row {
+        justify-content: space-around;
+    }
+
+    .testimonial-card {
+        width: 220px; /* Reduce aún más el ancho en pantallas medianas */
+    }
+
+    .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .testimonial-name {
+        font-size: 14px;
+    }
+
+    .testimonial-content {
+        font-size: 12px;
+    }
+
+    .star {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-row {
+        flex-direction: column; /* Alinea las tarjetas en columna en pantallas muy pequeñas */
+    }
+
+    .testimonial-card {
+        width: 100%; /* Usa el 100% del ancho en pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen para separar las cards */
+    }
+
+    .testimonial-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-name {
+        font-size: 12px;
+    }
+
+    .testimonial-content {
+        font-size: 10px;
+    }
+
+    .star {
+        font-size: 14px;
+    }
 }

@@ -39,3 +39,52 @@
     font-size: 1.125rem; 
     color: #555;
 }
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 10px;
+    }
+
+    .project-item {
+        height: auto;
+        max-height: 400px; 
+    }
+
+    .project-image {
+        height: 200px; 
+    }
+
+    .project-title {
+        font-size: 1.5rem; 
+    }
+
+    .project-description {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    .project-item {
+        height: auto;
+        max-height: 350px; 
+        margin: 0 10px; 
+    }
+
+    .project-image {
+        height: 180px; 
+    }
+
+    .project-title {
+        font-size: 1.25rem; 
+    }
+
+    .project-description {
+        font-size: 0.875rem; 
+    }
+}
