@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/style/NoInternet.css';
-import errorGif from '../assets/img/no-internet-gif.gif'
+import errorGif from '../assets/img/no-internet-gif.gif';
 import Button from './Button';
 
 export const NoInternet = () => {
@@ -14,7 +14,7 @@ export const NoInternet = () => {
                 <h1>¡Ooops! No Internet</h1>
                 <p className="error-code">Error 503</p>
                 <div className="retry-button" onClick={handleRetry}>
-                    <Button text="Try Again"/>
+                    <Button text="Try Again" />
                 </div>
             </div>
             <div className="no-internet-gif">

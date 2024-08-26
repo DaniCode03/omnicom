@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/style/CardTestimonial.css';
+import '../assets/style/CardTeam.css';
 
-export const CardTestimonial = ({ image, name, description, jobPosition }) => {
+export const CardTeam = ({ image, name, description, jobPosition }) => {
   return (
     <div className="card">
       <div className="card-image">
@@ -22,4 +22,4 @@ export const CardTestimonial = ({ image, name, description, jobPosition }) => {
   );
 };
 
-export default CardTestimonial;
+export default CardTeam;

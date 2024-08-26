@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Agrega padding para separarlo del borde en pantallas pequeñas */
+    padding: 20px; 
 }
 
 .testimonials-row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Permite que las cards se ajusten en varias filas en pantallas pequeñas */
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
     width: 100%;
@@ -21,11 +21,11 @@
     border: 1px solid #f1f1f1;
     box-shadow: 0px 0px 2px 3px #fff;
     padding: 20px;
-    margin: 10px; /* Ajusta el margen para dar espacio entre las cards en pantallas pequeñas */
+    margin: 10px;
     text-align: center;
     transition: transform 0.5s ease; 
-    width: 250px; /* Reduce el ancho en pantallas pequeñas */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 250px; 
+    height: auto; 
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 }
 
 .testimonial-avatar {
-    width: 60px; /* Reduce el tamaño del avatar en pantallas pequeñas */
+    width: 60px; 
     height: 60px;
     border-radius: 50%;
     margin-right: 10px;
@@ -55,13 +55,13 @@
 }
 
 .testimonial-name {
-    font-size: 16px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    font-size: 16px;
     color: #333;
     margin: 0;
 }
 
 .testimonial-content {
-    font-size: 14px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    font-size: 14px;
     color: #666;
     margin-bottom: 10px;
     text-align: left;
@@ -73,19 +73,18 @@
 }
 
 .star {
-    font-size: 18px; /* Ajusta el tamaño de las estrellas en pantallas pequeñas */
+    font-size: 18px; 
     color: #FFD700;
     margin: 0 2px;
 }
 
-/* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .testimonials-row {
         justify-content: space-around;
     }
 
     .testimonial-card {
-        width: 220px; /* Reduce aún más el ancho en pantallas medianas */
+        width: 220px; 
     }
 
     .testimonial-avatar {
@@ -108,12 +107,12 @@
 
 @media (max-width: 480px) {
     .testimonials-row {
-        flex-direction: column; /* Alinea las tarjetas en columna en pantallas muy pequeñas */
+        flex-direction: column;
     }
 
     .testimonial-card {
-        width: 100%; /* Usa el 100% del ancho en pantallas pequeñas */
-        margin: 10px 0; /* Ajusta el margen para separar las cards */
+        width: 100%; 
+        margin: 10px 0; 
     }
 
     .testimonial-avatar {

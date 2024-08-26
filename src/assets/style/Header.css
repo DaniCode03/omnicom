@@ -84,15 +84,15 @@ nav {
 .nav-links a:hover {
     color: #f4b400;
     text-shadow:
-        0 0 5px rgba(255,255,0,1),
-        0 0 10px rgba(255,255,0,1),
-        0 0 20px rgba(255,255,0,1),
-        0 0 40px rgba(255,255,0,1),
-        0 0 80px rgba(255,255,0,1),
-        0 0 90px rgba(255,255,0,1),
-        0 0 100px rgba(255,255,0,1),
-        0 0 140px rgba(255,255,0,1),
-        0 0 180px rgba(255,255,0,1);
+        0 0 5px rgba(255, 255, 0, 1),
+        0 0 10px rgba(255, 255, 0, 1),
+        0 0 20px rgba(255, 255, 0, 1),
+        0 0 40px rgba(255, 255, 0, 1),
+        0 0 80px rgba(255, 255, 0, 1),
+        0 0 90px rgba(255, 255, 0, 1),
+        0 0 100px rgba(255, 255, 0, 1),
+        0 0 140px rgba(255, 255, 0, 1),
+        0 0 180px rgba(255, 255, 0, 1);
 }
 
 .nav-links a:hover::after {
@@ -139,7 +139,7 @@ nav {
     header {
         padding: 10px;
         height: 80px;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
     .logo img {
@@ -149,7 +149,7 @@ nav {
 
 @media (min-width: 481px) and (max-width: 767px) {
     header {
-        padding: 10px 20px; 
+        padding: 10px 20px;
         height: 80px;
     }
 
@@ -166,7 +166,7 @@ nav {
         overflow: hidden;
         max-height: 0;
         display: block;
-        padding: 0; 
+        padding: 0;
         margin: 0;
     }
 
@@ -195,7 +195,7 @@ nav {
 
 @media (max-width: 480px) {
     header {
-        padding: 10px 10px; 
+        padding: 10px 10px;
         height: 70px;
     }
 
@@ -205,14 +205,14 @@ nav {
 
     nav {
         position: absolute;
-        top: 70px; 
+        top: 70px;
         left: 0;
         right: 0;
         background-color: #2e2e2e;
         overflow: hidden;
         max-height: 0;
         display: block;
-        padding: 0; 
+        padding: 0;
         margin: 0;
     }
 

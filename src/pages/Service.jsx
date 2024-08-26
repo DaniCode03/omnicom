@@ -53,43 +53,42 @@ export const Service = () => {
         <Titleh2 text="Product" />
         <div className="product-container">
           <SmartEcoControl
-            Image={SmartEcoImage} 
-            Price="$9.99"         
-            Name="SmartEcoControl" 
+            Image={SmartEcoImage}
+            Name="SmartEcoControl"
             Description="Description of the innovative product that offers monitoring and control of electrical devices at very low cost"
           />
         </div>
       </section>
       <section className="values-section">
-            <Titleh2 text="Values" />
-            <div className="values-container">
-                <Values 
-                  Title="Innovation"
-                  Parrafo="We embrace new technologies and practices to provide efficient and advanced solutions."
-                  Image={Innovation}
-                />
-                <Values 
-                  Title="Sustainability"
-                  Parrafo="Committed to the environment, we aim to reduce the ecological impact of our projects"
-                  Image={Sustainability}
-                />
-                <Values 
-                  Title="Quality"
-                  Parrafo="We ensure excellence in every project, guaranteeing total customer satisfaction."
-                  Image={Quality}
-                />
-                <Values 
-                  Title="Integrity"
-                  Parrafo="We operate with honesty and transparency in all our business relationships."
-                  Image={Integrity}
-                />
-                <Values 
-                  Title="Collaboration"
-                  Parrafo="We work together with clients, partners, and communities to achieve common goals."
-                  Image={Collaboration}
-                />
-            </div>
-        </section>
+        <Titleh2 text="Values" />
+        <div className="values-container">
+          <Values
+            Title="Innovation"
+            Parrafo="We embrace new technologies and practices to provide efficient and advanced solutions."
+            Image={Innovation}
+          />
+          <Values
+            Title="Sustainability"
+            Parrafo="Committed to the environment, we aim to reduce the ecological impact of our projects"
+            Image={Sustainability}
+          />
+          <Values
+            Title="Quality"
+            Parrafo="We ensure excellence in every project, guaranteeing total customer satisfaction."
+            Image={Quality}
+          />
+          <Values
+            Title="Integrity"
+            Parrafo="We operate with honesty and transparency in all our business relationships."
+            Image={Integrity}
+          />
+          <Values
+            Title="Collaboration"
+            Parrafo="We work together with clients, partners, and communities to achieve common goals."
+            Image={Collaboration}
+          />
+        </div>
+      </section>
     </div>
   );
 };

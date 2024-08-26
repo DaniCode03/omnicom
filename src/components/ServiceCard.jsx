@@ -4,13 +4,13 @@ import Button from '../components/Button';
 
 export const ServiceCard = ({ title, description, image }) => {
   return (
-    <div className="service-card">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div className="service-footer">
-            <img src={image} alt={title} />
-            <Button text="Order" />
-        </div>
+    <div className="service-card animate__animated animate__flipInX">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <div className="service-footer">
+        <img src={image} alt={title} />
+        <Button text="Order" />
+      </div>
     </div>
   )
 }

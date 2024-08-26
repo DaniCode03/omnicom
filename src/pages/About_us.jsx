@@ -2,7 +2,7 @@ import React from 'react'
 import Title from '../components/Title'
 import Description from '../components/Description';
 import ObjectiveSection from '../components/ObjectiveSection';
-import CardTestimonial from '../components/CardTestimonial';
+import CardTeam from '../components/CardTeam';
 import Empleado1 from '../assets/img/empleado1.jpg'
 import Empleado2 from '../assets/img/empleado2.jpg'
 import Empleado3 from '../assets/img/empleado3.jpg'
@@ -40,26 +40,26 @@ export const About_us = () => {
             </section>
             <section>
                 <Titleh2 text="MEET OUR TEAM" />
-                <div className="card-container">
-                    <CardTestimonial
+                <div className="card-container  animate__animated animate__fadeInUp">
+                    <CardTeam
                         image={Empleado1}
                         name="Natasha Patel"
                         description="''expert in integral solutions for energy efficiency and renewable energies''"
                         jobPosition="Renewable Energy Manager"
                     />
-                    <CardTestimonial
+                    <CardTeam
                         image={Empleado2}
                         name="Nat Reynolds"
                         description="''He is an expert in integrated building, energy efficiency and energy solutions''"
                         jobPosition="Construction and Energy Manager"
                     />
-                    <CardTestimonial
+                    <CardTeam
                         image={Empleado3}
                         name="Bob Roberts"
                         description="''Specialist in general electrical, air conditioning and plumbing solutions''"
                         jobPosition="Technical Services Coordinator"
                     />
-                    <CardTestimonial
+                    <CardTeam
                         image={Empleado4}
                         name="Sarah Johnson"
                         description="''Engineer with experience in energy efficiency and renewable energies''"

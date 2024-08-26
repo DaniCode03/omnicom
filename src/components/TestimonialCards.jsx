@@ -4,7 +4,7 @@ import '../assets/style/TestimonialCards.css'
 export const TestimonialCards = ({ Image, Name, Comment }) => {
     return (
         <div>
-            <div className="testimonial-card">
+            <div className="testimonial-card animate__animated animate__fadeInUp">
                 <div className="testimonial-header">
                     <img src={Image} alt={Name} className="testimonial-avatar" />
                     <div className="testimonial-info">
