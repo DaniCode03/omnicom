@@ -29,7 +29,7 @@ export const Footer = () => {
             <span className="separator">|</span>
             <span className="phone">
               <i className="fas fa-phone-alt"></i>
-              <a href="tel:3016758465">3016758465</a>
+              <a href="tel:3016758465">+1 5712788712</a>
             </span>
           </div>
         </div>

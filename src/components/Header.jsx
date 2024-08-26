@@ -52,7 +52,7 @@ export const Header = () => {
                     <li><Link to="/about_us" onClick={closeMenu}>About Us</Link></li>
                     <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
                     <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
-                    <li><Link to="/market-analysis" onClick={closeMenu}>Market Analysis</Link></li>
+                    <li><Link to="/market_analysis" onClick={closeMenu}>Market Analysis</Link></li>
                     <li><Link to="/contact_us" onClick={closeMenu}>Contact Us</Link></li>
                 </ul>
             </nav>
