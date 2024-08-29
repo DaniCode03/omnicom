@@ -8,6 +8,7 @@ import { About_us } from './pages/About_us';
 import { Service } from './pages/Service';
 import { Projects } from './pages/Projects';
 import { Market_Analysis } from './pages/Market_Analysis';
+import { Contact_us } from './pages/Contact_us';
 import Error from './pages/Error';
 import NoInternet from './components/NoInternet';
 
@@ -38,6 +39,7 @@ function App() {
             <Route path="Services" element={<Service />} />
             <Route path="Projects" element={<Projects />} />
             <Route path="Market_Analysis" element={<Market_Analysis />} />
+            <Route path="Contact_us" element={<Contact_us />} />
           </Route>
         </Routes>
       ) : (
