@@ -1,9 +1,7 @@
 import React from 'react'
 import '../assets/style/Projects.css'
 import Title from '../components/Title'
-import Titleh2 from '../components/Titleh2'
 import { CardProjects } from '../components/CardProjects'
-import TestimonialCards from '../components/TestimonialCards'
 import Project1 from '../assets/img/Project1.jpg'
 import Project2 from '../assets/img/Project2.jpg'
 import Project3 from '../assets/img/Project3.jpg'
@@ -14,14 +12,6 @@ import Project7 from '../assets/img/Project7.jpg'
 import Project8 from '../assets/img/Project8.jpg'
 import Project9 from '../assets/img/Project9.jpg'
 import Project10 from '../assets/img/Project10.jpg'
-import Testimonio1 from '../assets/img/persona1.jpg'
-import Testimonio2 from '../assets/img/persona2.jpg'
-import Testimonio3 from '../assets/img/persona3.jpg'
-import Testimonio4 from '../assets/img/persona4.jpg'
-import Testimonio5 from '../assets/img/persona5.jpg'
-import Testimonio6 from '../assets/img/persona6.jpg'
-import Testimonio7 from '../assets/img/persona7.jpg'
-import Testimonio8 from '../assets/img/persona8.jpg'
 
 export const Projects = () => {
     return (
@@ -81,55 +71,7 @@ export const Projects = () => {
                     />
                 </div>
             </section>
-            <section className="testimonials-section">
-                <Titleh2 text="Testimonials" />
-                <div className="testimonials-wrapper">
-                    <div className="testimonials-row">
-                        <TestimonialCards
-                            Image={Testimonio1}
-                            Name="Ana García"
-                            Comment="'The quality of the work exceeded our expectations. The team was very professional and the communication was excellent'"
-                        />
-                        <TestimonialCards
-                            Image={Testimonio2}
-                            Name="Carlos Mendoza"
-                            Comment="'A truly positive experience. The results were fantastic and the customer service was exceptional'"
-                        />
-                        <TestimonialCards
-                            Image={Testimonio3}
-                            Name="Mariana Suárez"
-                            Comment="'The team demonstrated a high level of commitment and professionalism. I recommend their services without hesitation'"
-                        />
-                        <TestimonialCards
-                            Image={Testimonio4}
-                            Name="Luis Fernández"
-                            Comment="'Excellent service and results. The team was attentive to every detail and met the agreed deadlines'"
-                        />
-                    </div>
-                    <div className="testimonials-row">
-                        <TestimonialCards
-                            Image={Testimonio5}
-                            Name="Lucía López"
-                            Comment="'Impressive attention to detail and professionalism. I would recommend their services to anyone'"
-                        />
-                        <TestimonialCards
-                            Image={Testimonio6}
-                            Name="Fernando Pérez"
-                            Comment="'The process went smoothly and the end result was more than we expected. ¡Excellent work!'"
-                        />
-                        <TestimonialCards
-                            Image={Testimonio7}
-                            Name="Elena Torres"
-                            Comment="'Very satisfied with the result. The team was efficient and the project was completed on time'"
-                        />
-                        <TestimonialCards
-                            Image={Testimonio8}
-                            Name="Andrés Gutiérrez"
-                            Comment="'A highly qualified and professional team. I am very happy with the work done'"
-                        />
-                    </div>
-                </div>
-            </section>
+            
         </div>
     )
 }

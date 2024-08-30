@@ -60,3 +60,11 @@
     max-width: 80px;
     margin-right: 15px;
 }
+
+.cards-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
