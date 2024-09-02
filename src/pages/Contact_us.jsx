@@ -22,7 +22,7 @@ export const Contact_us = () => {
             <section>
                 <div className="info-company">
                     <InfoCardComponent icon={addressIcon} title="Address" content="PO BOX 2734, WOODBRIDGE, VA, 22195" />
-                    <InfoCardComponent icon={phoneIcon} title="Phone" content="3016758465" />
+                    <InfoCardComponent icon={phoneIcon} title="Phone" content="+1 5712788712" />
                     <InfoCardComponent icon={emailIcon} title="Email" content="info@omnicomcr.com" />
                     <InfoCardComponent icon={hoursIcon} title="Opening Hours" content="Monday - Friday: 9:00 AM - 6:00 PM" />
                 </div>
