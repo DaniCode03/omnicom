@@ -5,7 +5,7 @@ export const CardMarket = ({ Icon,Name,Title,Text }) => {
     return (
         <div>
             <div className="three-columns">
-                <div className="column animate__animated animate__fadeInUp">
+                <div className="column">
                     <img src={Icon} alt={Name} />
                     <h2>{Title}</h2>
                     <p>{Text}</p>

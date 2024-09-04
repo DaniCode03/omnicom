@@ -40,7 +40,7 @@ export const About_us = () => {
             </section>
             <section>
                 <Titleh2 text="MEET OUR TEAM" />
-                <div className="card-container  animate__animated animate__fadeInUp">
+                <div className="card-container">
                     <CardTeam
                         image={Empleado1}
                         name="Natasha Patel"
