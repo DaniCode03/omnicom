@@ -3,8 +3,10 @@ import '../assets/style/InfoCardComponent.css';
 
 const InfoCardComponent = ({ icon, title, content }) => {
     return (
-        <div className="block">
-            <img src={icon} alt={`${title} Icon`} />
+        <div className="info-card">
+            <div className="icon-container">
+                <img src={icon} alt={`${title} Icon`} />
+            </div>
             <h3>{title}</h3>
             <p>{content}</p>
         </div>

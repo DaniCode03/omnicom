@@ -12,6 +12,7 @@ const MapComponent = () => {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps"
             ></iframe>
         </div>
     );
