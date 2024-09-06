@@ -67,14 +67,27 @@ const ContactFormComponent = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            console.log("Formulario enviado correctamente");
-            navigate('/');
+            fetch('http://localhost:5000/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log('Success:', data);
+                navigate('/');  // Redirige después de enviar el formulario
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
         }
     };
 
     return (
         <div className="contact-us">
-            <h2>Contact Us</h2>
+            <h2>we call you?</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <div className="input-container">
