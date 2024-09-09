@@ -77,12 +77,12 @@ const ContactFormComponent = () => {
             .then((response) => response.json())
             .then((data) => {
                 console.log('Success:', data);
-                navigate('/');  // Redirige después de enviar el formulario
+                window.location.reload();
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
-        }
+        }        
     };
 
     return (

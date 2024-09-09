@@ -3,10 +3,8 @@ import Title from '../components/Title'
 import Description from '../components/Description';
 import ObjectiveSection from '../components/ObjectiveSection';
 import CardTeam from '../components/CardTeam';
-import Empleado1 from '../assets/img/empleado1.jpg'
-import Empleado2 from '../assets/img/empleado2.jpg'
-import Empleado3 from '../assets/img/empleado3.jpg'
-import Empleado4 from '../assets/img/empleado4.jpg'
+import Freddy from '../assets/img/Freddy.jpg'
+import Jose from '../assets/img/Jose.jpg'
 import Titleh2 from '../components/Titleh2'
 import misionImg from '../assets/img/mision.jpg';
 import visionImg from '../assets/img/vision.jpg';
@@ -42,31 +40,20 @@ export const About_us = () => {
                 <Titleh2 text="MEET OUR TEAM" />
                 <div className="card-container">
                     <CardTeam
-                        image={Empleado1}
-                        name="Natasha Patel"
-                        description="''expert in integral solutions for energy efficiency and renewable energies''"
-                        jobPosition="Renewable Energy Manager"
+                        image={Freddy} 
+                        name="Fredy Castillo"
+                        description="Fredy Castillo is an experienced electrical engineer with over 15 years in design, construction, and maintenance of electrical networks, specializing in medium and low voltage systems. He has also been involved in photovoltaic solar energy projects and has a strong background in interdisciplinary collaboration."
+                        jobPosition="Electrical Engineer"
                     />
                     <CardTeam
-                        image={Empleado2}
-                        name="Nat Reynolds"
-                        description="''He is an expert in integrated building, energy efficiency and energy solutions''"
-                        jobPosition="Construction and Energy Manager"
-                    />
-                    <CardTeam
-                        image={Empleado3}
-                        name="Bob Roberts"
-                        description="''Specialist in general electrical, air conditioning and plumbing solutions''"
-                        jobPosition="Technical Services Coordinator"
-                    />
-                    <CardTeam
-                        image={Empleado4}
-                        name="Sarah Johnson"
-                        description="''Engineer with experience in energy efficiency and renewable energies''"
-                        jobPosition="Renewable Energy Manager"
+                        image={Jose} 
+                        name="José Rodríguez"
+                        description="José Rodríguez is a master electrician with more than 15 years of experience, proficient in installing, maintaining, and troubleshooting electrical systems, with expertise in HVAC systems and building controls. He holds multiple certifications, including Master Electrician and CFC Universal."
+                        jobPosition="Master Electrician"
                     />
                 </div>
             </section>
+
         </div>
     )
 }
